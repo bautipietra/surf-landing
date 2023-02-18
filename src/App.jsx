@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home"
 
 function App() {
   return (
-    <div className="w-full grid items-center min-h-screen">
+    <div className="w-full grid items-center min-h-screen ">
       <Nav></Nav>
       <Routes>
         <Route path="" element={<Home></Home>} />

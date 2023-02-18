@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ActivitySection from './ActivitySection'
 import Hero from './Hero'
+import Instructors from './Instructors'
 
 const Home = () => {
+  const [activity, setActivity] = useState(1)
   return (
     <div className='grid'>
-      <Hero></Hero>
+      <Hero activity={activity} setActivity={setActivity}></Hero>
+      <ActivitySection activity={activity}></ActivitySection>
+      <Instructors></Instructors>
     </div>
   )
 }
